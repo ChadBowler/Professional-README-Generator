@@ -18,7 +18,10 @@ A command-line application that runs with Node.js to dynamically generate  a REA
 
 ## Installation
 
-* Clone this repo to your local machine.\nRun npm install to install the package dependencies listed in the package.json file.\nStart the application by typing 'node index' into the command line.\nAnswer the promts, then your README file will be created!
+* Clone this repo to your local machine.
+* Run npm install to install the package dependencies listed in the package.json file.
+* Start the application by typing 'node index' into the command line.
+* Answer the promts, then your README file will be created!
 
 ## Usage
 
@@ -31,6 +34,7 @@ A command-line application that runs with Node.js to dynamically generate  a REA
 
 ## Contributing
 
+* Critiques always welcome.
 * ☕Buy me a coffee https://www.buymeacoffee.com/cbowlerdev
 
 ## Tests
