@@ -15,6 +15,7 @@ A command-line application that runs with Node.js to dynamically generate  a REA
 - [Features](#Features)
 - [Contributing](#Contributing)
 - [Tests](#Tests)
+- [Questions](#Questions)
 
 ## Installation
 
