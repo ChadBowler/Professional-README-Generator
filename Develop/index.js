@@ -1,4 +1,3 @@
-
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
@@ -78,15 +77,8 @@ const questions = [
             }
             return true;
         }
-    },
-    
-    
-    
-    
+    },   
 ];
-
-
-
 
 function writeToFile(fileName, data) {
 
@@ -108,11 +100,10 @@ function init() {
   })
   .catch((error) => {
     if (error.isTtyError) {
-      // Prompt couldn't be rendered in the current environment
+        console.error(error);
       console.log('tty err?');
     } else {
         console.error(error);
-      // Something else went wrong
     }
   });
 };

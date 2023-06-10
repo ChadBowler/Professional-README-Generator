@@ -32,7 +32,7 @@ function renderLicenseBadge(license) {
       return "";
   }
 }
-//
+
 function renderLicenseLink(license) {
   switch (license) {
     case 'Apache License 2.0':
@@ -76,13 +76,10 @@ function renderLicenseSection(license) {
     };
 };
 
-// TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  
   const licenseBadge = renderLicenseBadge(data.license);
   const licenseLink = renderLicenseLink(data.license);
   const licenseSection = renderLicenseSection(data.license);
-  console.log(licenseLink);
   return `# ${data.title}
 
 # ${licenseBadge}
