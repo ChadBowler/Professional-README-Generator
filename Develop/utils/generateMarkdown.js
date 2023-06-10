@@ -1,4 +1,4 @@
-
+//license badges from github gist - list of licenses from a github blog that breaks down most popular licenses on github
 function renderLicenseBadge(license) {
   switch (license) {
     case 'Apache License 2.0':
@@ -31,8 +31,8 @@ function renderLicenseBadge(license) {
     default:
       return "";
   }
-}
-
+};
+//links to licenses
 function renderLicenseLink(license) {
   switch (license) {
     case 'Apache License 2.0':
@@ -65,21 +65,12 @@ function renderLicenseLink(license) {
     default:
       return "";
   }
-}
-
-
-function renderLicenseSection(license) {
-    if (license !== '') {
-      return license;
-    } else {
-      return "";
-    };
 };
-
+//didn't need the renderLicenseSection function provided
+//main functionality organizing the README file
 function generateMarkdown(data) {
   const licenseBadge = renderLicenseBadge(data.license);
   const licenseLink = renderLicenseLink(data.license);
-  const licenseSection = renderLicenseSection(data.license);
   return `# ${data.title}
 
 # ${licenseBadge}
@@ -127,5 +118,5 @@ ${data.description}
 
 `;
 }
-
+//export
 module.exports = generateMarkdown;

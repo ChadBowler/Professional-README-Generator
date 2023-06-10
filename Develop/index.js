@@ -1,8 +1,9 @@
+//imports
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
 const fileName = 'README.md';
-
+//array of questions for inquirer prompt
 const questions = [ 
     {
         type: 'input',
@@ -79,33 +80,29 @@ const questions = [
         }
     },   
 ];
-
+//Node File System to write new README.md file
 function writeToFile(fileName, data) {
 
     fs.writeFile(fileName, data, err => {
         err ? console.error(err) : console.log('README.md file created!');
     });
 };
-
-
+//function to initialize
 function init() {
     
-inquirer
-  .prompt(questions)
-  .then((answers) => {
-    
-    const rmFile = generateMarkdown(answers);
-    writeToFile(fileName, rmFile);
-    
-  })
-  .catch((error) => {
-    if (error.isTtyError) {
-        console.error(error);
-    } else {
-        console.error(error);
-    }
-  });
+    inquirer
+    .prompt(questions)
+    .then((answers) => {
+        const rmFile = generateMarkdown(answers);
+        writeToFile(fileName, rmFile);
+    })
+    .catch((error) => {
+        if (error.isTtyError) {
+            console.error(error);
+        } else {
+            console.error(error);
+        }
+    });
 };
-
-
+//call init function
 init();
