@@ -28,6 +28,8 @@ A command-line application that runs with Node.js to dynamically generate  a REA
 
 * By answering the prompts in the command line, a dynamic README.md file will be created.
 
+* [Video File Link](https://drive.google.com/file/d/1aIo4XB8EjzU4ZrnbnOxiUKfAnuFnUR09/view?usp=drive_link)
+
 
 ## License
 
