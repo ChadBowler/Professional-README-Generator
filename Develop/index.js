@@ -90,7 +90,7 @@ function writeToFile(fileName, data) {
 
 function init() {
     
-    inquirer
+inquirer
   .prompt(questions)
   .then((answers) => {
     
