@@ -30,7 +30,7 @@ A command-line application that runs with Node.js to dynamically generate  a REA
 
 ## License
 
-* This application is licenced under the [MIT License](https://opensource.org/licenses/MIT)
+* This application is licensed under the [MIT License](https://opensource.org/licenses/MIT)
 
 ## Contributing
 
