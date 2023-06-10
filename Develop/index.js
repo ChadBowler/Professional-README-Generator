@@ -70,11 +70,11 @@ const questions = [
     },
     {
         type: 'input',
-        message: "What is the name of your GitHub repo?",
-        name: 'repo',
+        message: "What is your contact email?",
+        name: 'email',
         validate: function (answer) {
             if (answer.length < 1) {
-                return console.log("A valid GitHub repo is required for a badge.");
+                return console.log("A valid email is required.");
             }
             return true;
         }
