@@ -96,12 +96,11 @@ function init() {
     
     const rmFile = generateMarkdown(answers);
     writeToFile(fileName, rmFile);
-    console.log(rmFile);
+    
   })
   .catch((error) => {
     if (error.isTtyError) {
         console.error(error);
-      console.log('tty err?');
     } else {
         console.error(error);
     }
